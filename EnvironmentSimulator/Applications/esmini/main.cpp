@@ -13,8 +13,12 @@
 #include "playerbase.hpp"
 #include "CommonMini.cpp"
 #include "OSCParameterDistribution.hpp"
+#ifdef _USE_IMPLOT
 #include "Plot.hpp"
+#endif
+#ifdef _USE_OSG
 #include <osgViewer/ViewerEventHandlers>
+#endif
 #include <signal.h>
 
 #define MIN_TIME_STEP 0.01
